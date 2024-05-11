@@ -1,14 +1,14 @@
 body {
     
     margin: 0;
-    padding: 0;
+    padding: 20px;
 
 }
 .nav {
     text-align: right;
     font-size: 1.1em;
     font-family: 'Courier New', Courier, monospace;
-    
+    height:-1%;
 }
 
 nav ul {
@@ -23,13 +23,14 @@ nav ul li {
 
 nav ul li a {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 5px 30px;
     color: #fff;
     text-decoration: none;
     
 }
 
 .content {
+
     padding: 20px;
     font-family: fantasy;
     font-size: xx-large;
@@ -42,24 +43,21 @@ nav ul li a {
     font-size:larger;
     text-align: center;
 }
-h2{
-    text-align: righleft;
-    font-family: 'Courier New', Courier, monospace; 
-    display: flex ;
-    color: #fff;
 
-}
 header{
-    background-color: #333;
+    background-color: #4d42686b;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%; 
-    height: 1.5%;
+    height: 5%;
     padding:10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 99;
     font-size: 1.1em;
+}
+.header,img{
+    height: 300%;
 }
