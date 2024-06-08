@@ -70,3 +70,65 @@ header{
     font-size:xx-large;
     
 }
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .content {
+        font-size: x-large;
+    }
+    .div1, .div2 {
+        font-size: large;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav {
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    nav ul li a {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        display: inline-flex;
+        flex-direction:row;
+        height:9%
+    }
+    .content {
+        padding: 155px;
+        font-size: large;
+    }
+    .div1, .div2 {
+        flex-direction: column;
+        font-size: medium;
+    }
+    nav ul li a {
+        padding: 9px 30px;
+    }
+    .header,img{
+    height: 200%;
+}
+}
+
+@media (max-width: 576px) {
+     header {
+        display: inline-flex;
+        flex-direction:row;
+        height:10%
+    }
+    .content {
+        padding: 115px;
+        font-size: medium;
+    }
+    .div1, .div2 {
+        font-size: small;
+    }
+    nav ul li a {
+        padding: 1px 25px;
+    }
+}
