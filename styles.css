@@ -31,7 +31,7 @@ nav ul li a {
 
 .content {
 
-    padding: 20px;
+    padding: 55px;
     font-family: fantasy;
     font-size: xx-large;
 }
@@ -63,6 +63,9 @@ header{
 }
 
 .div2 p a i{
+    align-items: center;
+    text-align: center;
+    justify-content: baseline;
     color: black;
     font-size:xx-large;
     
