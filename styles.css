@@ -46,7 +46,7 @@ nav ul li a {
 
 header{
     background-color: #4d42686b;
-    position: fixed;
+    position:absolute;
     top: 0;
     left: 0;
     width: 100%; 
