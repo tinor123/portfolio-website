@@ -12,10 +12,10 @@
 }
 
 :root{
-    --bg-color:#081b29;
-    --second-bg-color:#112e42;
-    --text-color:#ededed;
-    --main-color:#00abf0;
+    --bg-color:#e7f5ff;
+    --second-bg-color:#ffffff;
+    --text-color:#1d1d1d;
+    --main-color:#6f97a7;
 }
 
 html{
@@ -87,7 +87,7 @@ section{
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url('profile-pic\ \(3\).png') no-repeat;
+    background: url('ronit.jpg') no-repeat;
     background-size:cover;
     background-position: center;
 }
