@@ -47,3 +47,15 @@ window.onscroll = () => {
 
     footer.classList.toggle('show-animate',this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
 }
+
+// Handle form submission
+document.addEventListener("DOMContentLoaded", function () {
+    let contactForm = document.querySelector(".contact form");
+
+    if (contactForm) {
+        contactForm.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent actual form submission
+            alert("Backend not available at the moment, please contact through LinkedIn.");
+        });
+    }
+});
