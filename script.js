@@ -54,8 +54,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (contactForm) {
         contactForm.addEventListener("submit", function (event) {
-            event.preventDefault(); // Prevent actual form submission
+            event.preventDefault();
             alert("Backend not available at the moment, please contact through LinkedIn.");
+            window.location.href = "https://www.linkedin.com/in/ronit-neupane-2005142b3";
         });
     }
 });
+
