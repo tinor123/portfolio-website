@@ -48,4 +48,41 @@ window.onscroll = () => {
     footer.classList.toggle('show-animate',this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
 }
 
+// Submit the contact form without leaving the page.
+document.addEventListener('DOMContentLoaded', () => {
+    const contactForm = document.querySelector('.contact form');
+    const formStatus = document.querySelector('.form-status');
+
+    if (!contactForm || !formStatus) {
+        return;
+    }
+
+    contactForm.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        formStatus.textContent = 'Sending...';
+        formStatus.className = 'form-status';
+
+        try {
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: new FormData(contactForm),
+                headers: {
+                    Accept: 'application/json'
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error('Message could not be sent.');
+            }
+
+            contactForm.reset();
+            formStatus.textContent = 'Email sent successfully.';
+            formStatus.classList.add('success');
+        } catch (error) {
+            formStatus.textContent = 'Unable to send your message. Please try again.';
+            formStatus.classList.add('error');
+        }
+    });
+});
+
 

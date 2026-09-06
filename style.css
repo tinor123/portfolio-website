@@ -640,6 +640,22 @@ span{
     cursor: pointer;
 }
 
+.form-status {
+    min-height: 2.4rem;
+    margin-top: 1.5rem;
+    color: var(--main-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.form-status.success {
+    color: #2f7d4a;
+}
+
+.form-status.error {
+    color: #b33a3a;
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
