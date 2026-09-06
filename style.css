@@ -561,6 +561,7 @@ span{
 
 .contact {
     min-height: auto;
+    background: var(--second-bg-color);
     padding-bottom: 7rem;
 }
 
@@ -947,5 +948,280 @@ section:nth-child(odd) .animate.scroll,
 @keyframes showRight {
     100% {
         width: 0;
+    }
+}
+
+/* Professional portfolio content */
+.home-content {
+    max-width: 72rem;
+}
+
+.home {
+    background-size: auto 82%;
+    background-position: right bottom;
+}
+
+.eyebrow {
+    color: var(--main-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: .14rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.home-content .hero-tags {
+    color: var(--main-color);
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 1.5rem 0 2rem;
+}
+
+.home-content .text-animate {
+    width: 100%;
+}
+
+.home-content .text-animate h3 {
+    width: fit-content;
+    max-width: 100%;
+}
+
+.career-snapshot {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    max-width: 65rem;
+    margin-top: 3.5rem;
+}
+
+.career-snapshot div {
+    padding-left: 1.2rem;
+    border-left: .2rem solid var(--main-color);
+}
+
+.career-snapshot strong,
+.career-snapshot span {
+    display: block;
+}
+
+.career-snapshot strong {
+    color: var(--text-color);
+    font-size: 1.9rem;
+}
+
+.career-snapshot span {
+    color: var(--main-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-top: .3rem;
+}
+
+.projects,
+.experience {
+    min-height: auto;
+    padding-bottom: 8rem;
+}
+
+.project-card,
+.experience-item,
+.skill-group {
+    position: relative;
+    border: .2rem solid var(--main-color);
+    border-radius: .8rem;
+    background: rgba(255, 255, 255, .58);
+    overflow: hidden;
+}
+
+.project-card {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 3.5rem;
+}
+
+.project-card-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.project-card-header h3 {
+    font-size: 3rem;
+    line-height: 1.25;
+}
+
+.project-card-header h3 span {
+    color: var(--main-color);
+}
+
+.project-card-header > i {
+    flex: 0 0 auto;
+    color: var(--main-color);
+    font-size: 4.5rem;
+}
+
+.project-meta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 2.5rem 0;
+    padding: 2rem 0;
+    border-top: .1rem solid rgba(111, 151, 167, .45);
+    border-bottom: .1rem solid rgba(111, 151, 167, .45);
+}
+
+.project-meta p,
+.project-overview,
+.experience-item p,
+.experience-item li {
+    font-size: 1.6rem;
+    line-height: 1.7;
+}
+
+.project-meta strong {
+    display: block;
+    color: var(--main-color);
+    font-size: 1.3rem;
+    letter-spacing: .08rem;
+    text-transform: uppercase;
+}
+
+.project-card h4 {
+    font-size: 2rem;
+    margin: 2.5rem 0 1.5rem;
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.tag-list span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 3.5rem;
+    padding: .6rem 1.2rem;
+    border: .1rem solid var(--main-color);
+    border-radius: 2rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.experience-list {
+    position: relative;
+    max-width: 100rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.experience-item {
+    padding: 2.5rem;
+}
+
+.experience-item .year {
+    color: var(--main-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.experience-item .year i {
+    margin-right: .5rem;
+}
+
+.experience-item h3,
+.skill-group h3 {
+    font-size: 2.2rem;
+}
+
+.experience-item .company {
+    color: var(--main-color);
+    font-weight: 600;
+    margin: .4rem 0 1.5rem;
+}
+
+.experience-item ul {
+    padding-left: 2rem;
+}
+
+.experience-item li::marker {
+    color: var(--main-color);
+}
+
+.skills-grid {
+    position: relative;
+    max-width: 100rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.skill-group {
+    padding: 2.5rem;
+}
+
+.skill-group:last-of-type {
+    grid-column: 1 / -1;
+}
+
+.skill-group h3 {
+    margin-bottom: 1.8rem;
+}
+
+.skills-grid .animate.scroll,
+.experience-list .animate.scroll,
+.project-card .animate.scroll {
+    background: var(--bg-color);
+}
+
+.projects.show-animate .animate.scroll,
+.experience.show-animate .animate.scroll,
+.skills.show-animate .animate.scroll {
+    width: 0;
+}
+
+@media (max-width: 768px) {
+    .home {
+        background-size: auto 30%;
+        background-position: right bottom;
+    }
+
+    .project-meta,
+    .experience-list,
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-group:last-of-type {
+        grid-column: auto;
+    }
+
+    .project-card {
+        padding: 2.5rem 2rem;
+    }
+
+    .project-card-header h3 {
+        font-size: 2.4rem;
+    }
+
+    .career-snapshot {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 2.5rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .home-content .hero-tags {
+        font-size: 1.5rem;
+    }
+
+    .project-card-header > i {
+        font-size: 3.5rem;
     }
 }
