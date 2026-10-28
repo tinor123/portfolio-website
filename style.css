@@ -927,6 +927,7 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .home-sci {
+        padding:10px;
         width: 160px;
     }
 
